@@ -5,12 +5,3 @@ provider "aws" {
   secret_key = var.secret_key
 }
 
-resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-test-bucket-123123142152352123123152"
-  acl    = "private"
-
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
-}
