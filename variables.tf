@@ -5,7 +5,7 @@ variable "name" {
 }
 
 variable "ssm_document_name" {
-  default     = "SSM-SessionManagerRunShell"
+  default     = "thinkstack-SSM-SessionManagerRunShell"
   type        = string
   description = "The name of the document."
 }
