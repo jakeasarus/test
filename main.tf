@@ -1,9 +1,3 @@
-provider "aws" {
-  region = "us-east-1"
-  access_key = var.secret_key
-  secret_key = var.access_key
-}
-
 # Terraform module which creates Session Manager resources on AWS.
 #
 # https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html
