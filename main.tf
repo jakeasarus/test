@@ -69,11 +69,11 @@ resource "aws_iam_policy" "default" {
 # https://www.terraform.io/docs/providers/aws/r/iam_role_policy_attachment.html
 resource "aws_iam_role_policy_attachment" "default" {
   role       = aws_iam_role.default.name
-      policy_arn = aws_iam_policy.default.arn
+  policy_arn = aws_iam_policy.default.arn
 }
 
 locals {
-      iam_name   = "${var.name}-session-manager"
+  iam_name   = "${var.name}-session-manager"
   iam_policy = var.iam_policy == "" ? data.aws_iam_policy.default.policy : var.iam_policy
 }
 
