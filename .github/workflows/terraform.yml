@@ -77,7 +77,12 @@ jobs:
 
     # Checks that all Terraform configuration files adhere to a canonical format
     - name: Terraform Format
-      run: terraform fmt
+      run: terraform fmt -check
+
+    # Runs a commit to commit Terraform Format changes
+    - name: commit
+      uses: EndBug/add-and-commit@v5
+      message: 'ran fmt'
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
