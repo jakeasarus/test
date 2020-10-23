@@ -77,7 +77,7 @@ jobs:
 
     # Checks that all Terraform configuration files adhere to a canonical format
     - name: Terraform Format
-      run: terraform fmt -check
+      run: terraform fmtt
 
     # Runs a commit to commit Terraform Format changes
     - name: commit
