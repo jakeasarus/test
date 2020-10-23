@@ -85,9 +85,9 @@ jobs:
       uses: EndBug/add-and-commit@v5.1.0
       with:
         # Arguments for the git add command
-        add: # optional, default is .
+        add: '.'
         # The name of the user that will be displayed as the author of the commit
-        author_name: # optional
+        author_name: 'Jake Jones'
         # The email of the user that will be displayed as the author of the commit
         author_email: # optional
         # Name of the branch to use, if different from the one that triggered the workflow
