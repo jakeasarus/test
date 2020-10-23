@@ -33,7 +33,7 @@ resource "aws_ssm_document" "default" {
 
 # https://www.terraform.io/docs/providers/aws/r/iam_instance_profile.html
 resource "aws_iam_instance_profile" "default" {
-     name =   local.iam_name
+    name =   local.iam_name
   role = aws_iam_role.default.name
   path = var.iam_path
 }
